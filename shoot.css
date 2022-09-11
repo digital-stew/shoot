@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#game-canvas, #hitBox-canvas, .nasa-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.nasa-overlay{
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: 2;
+    opacity: 1;
+    pointer-events: none;
+    
+}
+#hitBox-canvas{
+    display: none;
+}
+
+#game-canvas{
+    z-index: 2;
+    background-color: black;
+    /* cursor: none; */
+}
+.startScreen{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    translate: -50%;
+    width: 60vw;
+    height: 60vh;
+    background-color: blue;
+    z-index: 3;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    font-size: larger;
+    font-weight: 900;
+    color: #999;
+    box-shadow: 5px 5px 5px #777;
+    background-color: black;
+}
+.startScreen p{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: antiquewhite;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    font-size: larger;
+    box-shadow: 1px 1px 1px black;
+    
+}
+.startBtn{
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 300px;
+    height: 80px;
+    margin-top: 25px;
+    align-self: center;
+    border-radius: 10px;
+    animation-fill-mode: forwards;
+    cursor:wait;
+}
+.startBtn:hover{
+    animation: btnAnamation 1s forwards;
+    
+}
+@keyframes btnAnamation {
+    from { box-shadow: 10px 5px 5px red; }
+    to   { box-shadow: 20px 15px 15px red;translate: 0 -10%; }
+}
+
+h1{
+    position: relative;
+    pointer-events: none;
+    text-align: center;
+    color: white;   
+    z-index: 3;
+    cursor: none;
+    pointer-events: none;
+}
+.score, #score{
+    cursor: none;
+    pointer-events: none;
+}
+.link:hover{
+    cursor: pointer;
+
+}

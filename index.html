@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invaders</title>
+    <script src="./shoot.js" defer></script>
+    <link rel="stylesheet" href="shoot.css">
+</head>
+<body>
+    
+    <div id="game-container">
+     <div class="score"><h1 id="score"></h1></div>
+     <div class="startScreen">
+        <h1>shoot the invaders</h1>
+        <p class="link" onclick="window.open('https://api.nasa.gov/');">Background pictures from NASA api </p>
+        <p class="link" onclick="window.open('https://itch.io/game-assets/free');">Game art from itch.io</p>
+        <div class="startBtn">
+            <h1>START</h1>
+        </div>
+     </div>  
+        <canvas id="hitBox-canvas" ></canvas>
+        <canvas id="game-canvas" ></canvas>
+        <div class="nasa-overlay"></div>
+        
+    </div>
+    
+</body>
+</html>
